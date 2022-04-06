@@ -1,0 +1,10 @@
+---
+apiVersion: imgpkg.carvel.dev/v1alpha1
+images:
+- annotations:
+    kbld.carvel.dev/id: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/controller:v0.34.1@sha256:558239fcf8370cb7514cfca57e9f46399e5b60bca876828e0d833112d65fc45b
+  image: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/controller@sha256:558239fcf8370cb7514cfca57e9f46399e5b60bca876828e0d833112d65fc45b
+- annotations:
+    kbld.carvel.dev/id: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/webhook:v0.34.1@sha256:70cab42dec664eda056076abaddcd66183678409ab6911821960f5e9889d6b21
+  image: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/webhook@sha256:70cab42dec664eda056076abaddcd66183678409ab6911821960f5e9889d6b21
+kind: ImagesLock
