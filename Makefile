@@ -3,7 +3,7 @@
 
 REQUIRED_BINARIES := imgpkg kbld ytt vendir
 PACKAGE_VERSIONS := 0.34.1
-OCI_IMAGE := ghcr.io/alexandreroman/tekton-tanzu-extra
+OCI_IMAGE := ghcr.io/alexandreroman/tekton-pipelines-tanzu-extra
 
 check-carvel:
 	$(foreach exec,$(REQUIRED_BINARIES),\

@@ -1,10 +1,10 @@
-# Tekton - Carvel package for Tanzu
+# Tekton Pipelines - Carvel package for Tanzu
 
 This project defines a [Carvel package](https://carvel.dev/kapp-controller/docs/latest/packaging/)
-for [Tekton](https://tekton.dev), a powerful and flexible open-source framework
+for [Tekton Pipelines](https://tekton.dev/docs/pipelines), a powerful and flexible open-source framework
 for creating CI/CD systems for Kubernetes clusters.
 
-This package only includes the [Tekton Pipelines](https://github.com/tektoncd/pipeline) module.
+Please note this package only includes the [Tekton Pipelines](https://github.com/tektoncd/pipeline) module.
 
 ## How to use it?
 
@@ -14,18 +14,19 @@ Please refer to this page for installation instructions.
 
 Here are the configuration parameters for this package:
 
-| Key                         | Description                           |
-|-----------------------------|---------------------------------------|
-| tekton.pvc.size             | Size for Persistent Volume requests   |
-| tekton.pvc.storageClassName | Storage class name                    |
+| Key                                   | Description                           |
+|---------------------------------------|---------------------------------------|
+| tekton.pipelines.pvc.size             | Size for Persistent Volume requests   |
+| tekton.pipelines.pvc.storageClassName | Storage class name                    |
 
 Configuration example:
 
 ```yaml
 tekton:
-  pvc:
-    size: 5Gi
-    storageClassName: default
+  pipelines:
+    pvc:
+      size: 5Gi
+      storageClassName: default
 ```
 
 ## Contribute

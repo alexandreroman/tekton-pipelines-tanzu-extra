@@ -1,6 +1,7 @@
 #@data/values
 ---
 tekton:
-  pvc:
-    size: 5Gi
-    storageClassName: default
+  pipelines:
+    pvc:
+      size: 5Gi
+      storageClassName: default
